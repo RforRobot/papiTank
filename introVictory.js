@@ -6,13 +6,9 @@ const creepSpeed = 2.25;
 var gameOverState = midField + 100 * creepSpeed;
 var winner;
 
-var stalemateMusic = new Audio('assets/miert.mp3');
-var redMusic = new Audio('assets/amuri.mp3');
-var blueMusic = new Audio('assets/carmagnole.mp3');
-
 function intro() {
 
-    if (gameOverState > 0 && winner == undefined) {
+    if (gameOverState > 0 && winner === undefined) {
         gameOverState -= creepSpeed;
 
         var creepPosition = Math.min(midField, gameOverState);
@@ -34,7 +30,7 @@ function intro() {
         ctx.fillText("Tank", canvas.width * (1 - ratio), canvas.height * (1 - ratio));
         ctx.strokeText("Papi", canvas.width * ratio, canvas.height * ratio);
         ctx.strokeText("Tank", canvas.width * (1 - ratio), canvas.height * (1 - ratio));
-    } else if (winner == undefined) {
+    } else if (winner === undefined) {
         gameOverState = 0;
     }
 }

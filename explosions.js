@@ -22,7 +22,7 @@ class Explosion {
                 this.timer++;
             }, i * 4);
         }
-        new Audio('assets/boom.m4a').play();
+        boomSfx.play();
 
     }
 

@@ -25,7 +25,7 @@ function fireInput() {
 function shoot(tank) {
     if(tank.ammoLoadState == 5) {
         new Shell(tank);
-        new Audio('assets/pew.m4a').play();
+        pewSfx.play();
         tank.ammoLoadState = 0;
         tank.loadAmmo();
     } 

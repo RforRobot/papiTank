@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Papi Tank</title>
+  <link rel="stylesheet" href="myStyle.css">
+</head>
+
+<body>
+
+  <table>
+    <tr>
+      <td rowspan="8">
+        <canvas id="canvas" width="1200" height="720"></canvas>
+      </td>
+      <td>
+        <span id="red">Red</span> <br>
+      </td>
+      <td>
+        Player controls for: <br>
+      </td>
+      <td>
+        <span id="blue">Blue</span><br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <br>
+        A <br>
+        D <br>
+        W <br>
+        S <br>
+      </td>
+      <td>
+        <i>Movement</i> <br>
+        Turn left: <br>
+        Turn right: <br>
+        Accelerate forwards: <br>
+        Accelerate backwards: <br>
+      </td>
+      <td>
+        <br>
+        &#8592; <br>
+        &#8594; <br>
+        &#8593; <br>
+        &#8595; <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <br>
+        V <br>
+        G <br>
+        B <br>
+      </td>
+      <td>
+        <i>Misc.</i> <br>
+        Fire: <br>
+        Next tank: <br>
+        Previous tank: <br>
+      </td>
+      <td>
+        <br>
+        End <br>
+        Page Up <br>
+        Page Down <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <br><br>
+        F <br><br>
+        LeftShift+key
+      </td>
+      <td>
+        <i>Group</i> <br>
+        Add/remove<br>
+        tank to/from group: <br><br>
+        Command to group:
+      </td>
+      <td>
+        <br><br>
+        Home <br><br>
+        RightShift+key
+      </td>
+    </tr>
+  </table>
+
+
+  <br>
+
+</body>
+<script src="HTML/HTMLelements.js"></script>
+<script src="target.js"></script>
+<script src="selection.js"></script>
+<script src="movement.js"></script>
+<script src="shoot.js"></script>
+<script src="tank.js"></script>
+<script src="explosions.js"></script>
+<script src="canvas.js"></script>
+<script src="introVictory.js"></script>
+<script src="players.js"></script>
+<script src="keysDown.js"></script>
+<script src="engine.js"></script>
+<script src="events.js"></script> <!-- Last, connects defined functions to listeners  -->
+
+</html>

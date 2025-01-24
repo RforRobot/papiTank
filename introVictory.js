@@ -9,7 +9,7 @@ var winner;
 function intro() {
 
     if (gameOverState > 0 && winner === undefined) {
-        gameOverState -= creepSpeed;
+        gameOverState -= 2*creepSpeed;
 
         var creepPosition = Math.min(midField, gameOverState);
 
